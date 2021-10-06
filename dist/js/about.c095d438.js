@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{f820:function(n,t,a){"use strict";a.r(t);var e=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("v-card",[n._v(" About ")])},u=[],r=a("2877"),c=a("6544"),l=a.n(c),o=a("b0af"),s={},b=Object(r["a"])(s,e,u,!1,null,null,null);t["default"]=b.exports;l()(b,{VCard:o["a"]})}}]);
+//# sourceMappingURL=about.c095d438.js.map
