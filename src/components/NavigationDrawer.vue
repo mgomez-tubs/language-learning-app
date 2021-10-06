@@ -19,6 +19,7 @@
             <v-list-item
             v-for="item in items"
             :key="item.title"
+            :to= "'/learn/' + item.title"
             link
             >
             <v-list-item-icon>
@@ -39,21 +40,21 @@ export default {
     data(){
         return {
         items: [
-            { title: '(Spain)', icon: 'mdi-view-dashboard' },
-            { title: 'Madrid', icon: 'mdi-view-dashboard' },
-            { title: 'Seville', icon: 'mdi-forum' },
-            { title: 'Grenade', icon: 'mdi-forum' },
-            { title: 'Bilbao', icon: 'mdi-forum' },
-            { title: 'Granada', icon: 'mdi-forum' },
-            { title: 'Cordoba', icon: 'mdi-forum' },
-            { title: 'Valencia', icon: 'mdi-forum' },
-            { title: 'Salamanca', icon: 'mdi-forum' },
-            { title: 'San Sebastian', icon: 'mdi-forum' },
+            { title: '(Spain)',         icon: 'mdi-view-dashboard' },
+            { title: 'Madrid',          icon: 'mdi-forum' },
+            { title: 'Seville',         icon: 'mdi-forum' },
+            { title: 'Grenade',         icon: 'mdi-forum' },
+            { title: 'Bilbao',          icon: 'mdi-forum' },
+            { title: 'Granada',         icon: 'mdi-forum' },
+            { title: 'Cordoba',         icon: 'mdi-forum' },
+            { title: 'Valencia',        icon: 'mdi-forum' },
+            { title: 'Salamanca',       icon: 'mdi-forum' },
+            { title: 'San Sebastian',   icon: 'mdi-forum' },
             { title: '(South America)', icon: 'mdi-view-dashboard' },
-            { title: 'Lima', icon: 'mdi-view-dashboard' },
-            { title: 'Montevideo', icon: 'mdi-forum' },
-            { title: 'Quito', icon: 'mdi-forum' },
-            { title: 'Buenos Aires', icon: 'mdi-forum' },
+            { title: 'Lima',            icon: 'mdi-forum' },
+            { title: 'Montevideo',      icon: 'mdi-forum' },
+            { title: 'Quito',           icon: 'mdi-forum' },
+            { title: 'Buenos Aires',    icon: 'mdi-forum' },
             ]
         }
   },

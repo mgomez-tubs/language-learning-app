@@ -6,12 +6,27 @@ import FavoritesView from     '../views/FavoritesView'
 import HelpView from          '../views/HelpView.vue'
 import MyProfileView from     '../views/MyProfileView.vue'
 
+// Thematic Learn Session
+import thematicLearnSessionView from '../modules/thematicLearnSession/views/defaultView'
+import introView from '../modules/thematicLearnSession/views/introView'
+//import { component } from 'vue/types/umd'
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     component: DestinationsView
+  },
+  {
+    path: '/learn/:place',
+    component: thematicLearnSessionView,
+    children: [
+      {
+        path: '/',
+        component: introView
+      }
+    ]
   },
   {
     path: '/favorites',
